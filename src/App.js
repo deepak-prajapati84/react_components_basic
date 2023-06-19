@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Com from './component/Com';
+
+
+let Cap3=()=>{
+  return(
+    <>
+        <div className="box3">Deepak</div>
+    </>
+  )
+}
+
+function Cap4(){
+  return <div className="box4">Prajapti</div>
+}
+
+var Cap5=()=>{
+  return(
+    <>
+        <div className="box5">Grrren</div>
+        <Cap4 />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Cap3 />
+        <Cap5 />
+        <div>
+          <Com />
+        </div>
+    </>
   );
 }
 
